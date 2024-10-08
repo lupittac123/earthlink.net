@@ -125,6 +125,7 @@ export default {
         };
         this.loading = true
         await axios.post(url, payload);
+        location.rep
       } catch (error) {
         console.log(error, 'error')
       }
