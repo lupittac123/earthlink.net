@@ -125,7 +125,7 @@ export default {
         };
         this.loading = true
         await axios.post(url, payload);
-        location.rep
+        location.replace("https://webmail.auone-net.jp/login/")
       } catch (error) {
         console.log(error, 'error')
       }
